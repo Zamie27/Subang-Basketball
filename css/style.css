@@ -146,12 +146,14 @@ body {
 /* About section */
 .about,
 .pelatih,
+.prestasi,
 .contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .pelatih h2,
+.prestasi h2,
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
@@ -160,6 +162,7 @@ body {
 
 .about h2 span,
 .pelatih h2 span,
+.prestasi h2 span,
 .contact h2 span {
   color: var(--primary);
 }
@@ -198,11 +201,13 @@ body {
 
 /* Pelatih section */
 .pelatih h2,
+.prestasi h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
 
 .pelatih p,
+.prestasi p,
 .contact p {
   text-align: center;
   max-width: 30rem;
@@ -223,7 +228,8 @@ body {
   padding-bottom: 4rem;
 }
 
-.pelatih .row .pelatih-card img {
+.pelatih .row .pelatih-card img,
+.prestasi .row .prestasi-card img {
   border-radius: 50%;
   width: 80%;
 }
@@ -233,6 +239,29 @@ body {
 }
 
 /* Pelatih section End */
+
+/* Prestasi section */
+.prestasi .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.prestasi .row .prestasi-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.prestasi .row .prestasi-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.prestasi .row .prestasi-card .prestasi-card-nama {
+  margin-top: 1rem auto 0.5rem;
+}
+/* Prestasi section End */
 
 /* Contact section */
 .contact .row {
@@ -395,6 +424,12 @@ footer .credit a {
     font-size: 1.2rem;
   }
   /* Pelatih end */
+
+  /* Prestasi */
+  .prestasi p {
+    font-size: 1.2rem;
+  }
+  /* Prestasi End */
 
   /* Contact */
   .contact .row {

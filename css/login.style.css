@@ -1,0 +1,206 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "poppins", sans-serif;
+  min-height: 80vh;
+
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #010101d4;
+  border-bottom: 1px solid #5b462f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+/* Navbar End */
+
+/* login */
+
+.login {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.login h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.login .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.login .row form {
+  flex: 1 1 45rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.login .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.login .row form .input-group input {
+  width: 80%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+
+.login .row .lupa p {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.login .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.login .row p {
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.login .row p a {
+  color: dodgerblue;
+}
+
+/* Footer section */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .sosials {
+  padding: 1rem 0;
+}
+
+footer .sosials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .sosials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+/* Footer section End */
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  /* comment here */
+  .login {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  .login .row form .input-group input {
+    width: 90%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  /* comment here */
+  .login {
+    margin-top: 30%;
+    margin-bottom: 35%;
+  }
+
+  .login .row form .input-group input {
+    width: 85%;
+  }
+}
+
+/* Mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  /* comment here */
+  .login {
+    margin-top: 50%;
+    margin-bottom: 60%;
+  }
+
+  .login .row form .input-group input {
+    width: 80%;
+  }
+}
